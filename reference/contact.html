@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA REFERENCE</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <img src="LOGO-LA-REFERENCE.jpg" alt="logo" id="logoLR">
+        <h1> 
+            <em id="rouge">CENTRE DE</em> <em id="cafe">FORMATION</em><br>
+            <strong id="noir">LA REFERENCE</strong>
+        </h1>
+        
+        <nav>
+            <ul id="first">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="adresse.html">Adresse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Contact Form -->
+    <section class="contact">
+        <h2>nous somme là pour des questions ou conseils</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Adresse Email :</label>
+                <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea name="message" id="message" rows="5" maxlength="500" placeholder="laissez nous un message"></textarea>
+            </div>
+    
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <div class="container">
+        <div class="left">
+            <h1>Rejoindre ma reference !</h1>
+            <a href="inscription.php" class="btn">S'inscrire</a>
+        </div>
+        
+        <div class="right">
+            <h2>Infos</h2>
+            <p>📞 <a href="tel:+22893429707" style="color: blueviolet;">Téléphone: +228 93 42 97 07</a></p>
+            <p>📧 <a href="mailto:lareferencetogo@gmail.com"style="color: blueviolet;">Email: lareferencetogo@gmail.com</a></p>
+
+            <h2>Adresse</h2>
+            <p><a href="https://www.google.com/maps/place/Agoè-Zossimé" style="color: blueviolet;">Mon adresse: Agoè-Zossimé</a></p>
+
+            <h2>Suivre</h2>
+            <p>
+                <a href="https://wa.me/22893429707" style="color: blueviolet;">Whatsapp</a> |
+                <a href="https://www.facebook.com/LeCepMaisonDeFormations" style="color: blueviolet;">Facebook</a> |
+                <a href="https://www.tiktok.com/@formateur7" style="color: blueviolet;">tiktok</a>
+            </p>
+        </div>
+    </div>
+
+
+    <script defer src="app.js"></script>
+
+    <footer>
+        <p>&copy; 2025 LA REFERENCE - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

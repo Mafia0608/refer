@@ -1,0 +1,459 @@
+#rouge{
+    color: red;
+}
+#cafe{
+    color: moccasin;
+}
+#noir{
+    color: black;
+}
+
+
+nav ul li {
+    display: flow-root;
+    margin: 0 10px;
+      
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4c542;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+h2 {
+    color: #003366;
+}
+
+button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc8400;
+}
+
+/* Animation d'apparition au scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.service-list, .project-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item, .project-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#logo{
+    width: 32px;
+    height: 32px;
+}
+#btn{
+    background-color: rgb(25, 104, 207);
+    width: 180px;
+    height: 30px;  
+}
+#cont{
+    border-bottom: #F4F4F4;
+}
+#logoLR{
+    height: 80px; 
+    width: auto;
+    margin-right: 15px;
+    text-align: center;
+    display: flexbox;
+    border-bottom: #333;
+    background-origin: content-box;
+    border-radius: 10px;
+    border-bottom: 10px;
+    border-style: double;
+    background-color: green;
+}
+h1{
+    text-align: center;
+}
+
+.info-list, .project-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-item, .project-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    display: flexbox;
+}
+#cibleList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
+
+nav ul li {
+    margin: 0 10px;
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+/* Sections */
+section {
+    padding: 100px 20px;
+    margin-top: 60px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    background-color: blue;
+    background-size: 100%;
+    color: white;
+    padding: 20px;  
+    border: #333;
+    border-color: #333;
+    border-radius: 5px;
+    border-bottom: 25px;
+    width: 100%;
+}
+#accueil{
+   
+    margin-right: 15px;
+    text-align: center;
+    display: flexbox;
+    border-bottom: #333;
+    background-origin: content-box;
+    border-radius: 10px;
+    border-bottom: 10px;
+    border-style: none;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    background-attachment: scroll;
+   
+}
+#photo1{
+    padding: auto;
+    margin: 15px 20px;
+    border: #007BFF;
+    border-color: #007BFF;
+    border-radius: 15px;
+}
+
+#ftt{
+    font-size: 4rem;
+    font-weight: bold;
+    color: blue;
+    text-shadow: 3px 3px 10px greenyellow;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease-out forwards;
+
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Blog */
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.blog-post {
+    display: flex;
+    align-items: center;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 900px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.blog-post img {
+    width: 40%;
+    height: auto;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-post.visible {
+    transform: translateY(0);
+    opacity: 5;
+}
+
+
+.blog-post {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.blog-post.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.blog-post img {
+    transition: transform 0.5s ease;
+}
+
+.blog-post:hover img {
+    transform: scale(1.1);
+}
+
+.blog-content {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.blog-post:hover .blog-content {
+    opacity: 1;
+}
+#ftt{
+    width: 300px;
+    height: 215px;
+}
+
+
+
+
+
+
+@keyframes changeBackground {
+    0%, 100% { background-image: url("pexels-canvy-mockups-56805-205316.jpg"); }
+    20% { background-image: url("pexels-pixabay-301926.jpg"); }
+    40% { background-image: url("pexels-pavel-danilyuk-8761551.jpg"); }
+    60% { background-image: url("pexels-pavel-danilyuk-8761554.jpg"); }
+    80% {background-image: url("pexels-rdne-9034739.jpg");}
+}
+
+#one {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    animation: changeBackground 15s infinite alternate-reverse;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#anim {
+    font-size: 4rem; /* Taille du texte */
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 10px rgba(236, 240, 1, 0.877);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 7s infinite;
+}
+
+/* Animation d'apparition */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Effet de survol */
+#titre:hover {
+    color: #f19813;
+    text-shadow: 6px 6px 15px rgba(5, 193, 226, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Effet dynamique sur le bouton */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #0ff, #00f);
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0ff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #0ff, 0 0 30px #00f;
+}
+
+iframe {
+    width: 100%;
+    height: 500px; /* Ajuste selon ton besoin */
+    max-width: 800px;
+    border: 2px solid #007bff; /* Bordure bleue */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 5px 5px 15px green;
+}
+
+iframe {
+    transition: transform 0.3s ease-in-out;
+}
+
+iframe:hover {
+    transform: scale(1.05);
+}
+
+
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Ratio 16:9 */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.changing-text{
+    font-size: 5rem;
+    color: color-mix(in hwb increasing hue, red 70%, black 30%);
+}
+
+
+

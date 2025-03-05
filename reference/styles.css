@@ -1,0 +1,338 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; 
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: blue; 
+    text-align: center;
+    position: relative;
+    /* espace entre les élements */
+    padding-bottom: 10px;  
+    /*espace extérieur sous les élements  */
+    margin-bottom: 30px;
+  }
+  
+  h2::after {
+    /* insereé les élement sans modifié le html */
+    content: "";  
+    /* controle la manière les ellement s'affiche(block ou en ligne...) */
+    display: block;  
+   /* largeur  */
+    width: 80px;
+    /* hauteur */
+    height: 4px;       
+    background-color: #5a4d41;
+    /* espace en haut d'un element */
+     margin: 10px auto 0;    
+  }
+  
+  .propos h2 {
+    background-color: #ffffff; 
+    color: blue;
+    text-decoration: underline;
+    /* espace en bas d'un element */
+    padding: 50px 20px; 
+    /* position du texte (milieu ou a droite ou a gauche) */
+    text-align: center; 
+  }
+  
+  .propos p {
+    font-size: 1.2rem;
+    /* hauteur de la ligne du texte */
+    line-height: 1.6;
+    margin: 20px auto;
+    /* largeur maximal */
+    max-width: 800px;
+    padding: 50px 20px; 
+    text-align: center;
+    color: black;
+  }
+  
+  .img img {
+    width: 100%;
+    max-width: 400px;
+    /* definit les coins arrondi d'une boite,image,button... */
+    border-radius: 10px;
+    margin-top: 20px;
+    /* ajouter de nombres porté autour d'un element(amélioré l'apparence d'un element) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service {
+    display: flex;
+    /* orientation des éléments */
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  .service-box {
+    display: flex;
+    justify-content: center;
+    /* controlé le comportement des élément dans les collones */
+    flex-wrap: wrap;
+    /* espace entre les élément dans une colonne ou autres... */
+    gap: 30px;
+    max-width: 1200px;
+  }
+  
+  .service-img {
+    width: 300px;
+    height: 300px; 
+    background-color: #ffffff; /* Fond blanc pour les éléments de service */
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .formation {
+    color: #333333;
+    padding: 10px;
+  }
+  
+  .formation h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: blue;
+  }
+  
+  .contact {
+    padding: 50px 20px;
+    text-align: center;
+    color: blue;
+  }
+  
+  .contact h2 {
+    color: blue; 
+  }
+  
+  form {
+    max-width: 500px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color:blue;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: red;
+    /* ajouter une bordure autour d'un élément */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    /* type de cursseur */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: green;
+    /* redimenssionner */
+    transform: scale(1.05);
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .service-box {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .service-img {
+        width: 90%;
+        height: auto;
+    }
+  
+    form {
+        width: 90%;
+    }
+  }
+  
+  /* Section principale */
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: blue;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  
+  h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #5a4d41;
+    margin: 10px auto 0;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    color: black;
+  }
+  
+  .left, .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .left {
+    background: #f4f4f4;
+  }
+  
+  .right {
+    background: #f4f4f4;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .visible {
+    /* niveau de transparence des éléments */
+    opacity: 1;
+    /* déplacer les éléments sans pertubation */
+    transform: translateY(0);
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  /* définir une animation en spécifiant les étapes intermédiaires d'une animation */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #5a4d41;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+    animation: pulse 2s infinite;
+  }
+  
+  .btn:hover {
+    background: #7a5f46;
+    transform: scale(1.1);
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(-10px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  .right a {
+    display: inline-block;
+    opacity: 0;
+    animation: slide 1s ease forwards;
+  }
+  
+  .right a:nth-child(1) { animation-delay: 0.2s; }
+  .right a:nth-child(2) { animation-delay: 0.4s; }
+  .right a:nth-child(3) { animation-delay: 0.6s; }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        color: black;
+    }
+  
+    .left, .right {
+        width: 100%;
+        padding: 20px;
+    }
+  }
+  

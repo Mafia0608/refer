@@ -1,0 +1,107 @@
+/* Style de base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f2f1; /* Fond gris clair */
+    color: #333; 
+    /* line-height: hauteur de la ligne d'un texte  */
+    line-height: 1.6;  
+    margin: 150px;
+    padding: 20px;
+    margin-bottom: 125px;
+    } 
+    
+    /* Titre principal */
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        color: blue; 
+        margin-top: 30px;
+        font-weight: bold;
+        animation: fadeIn 1.5s ease-out;
+    }
+    
+    /* Paragraphe principal */
+    .intro p {
+        font-size: 1.2rem;
+        margin: 20px 0;
+        text-align: justify;
+        color: #555;
+        opacity: 0;
+        animation: fadeIn 2s ease-out forwards;
+    }
+    
+    /* Liste non ordonnée */
+    #list {
+        list-style-type: none;  /* Retirer les puces par défaut */
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    /* Élément de la liste */
+    #list #li {
+        background-color: #ffffff;
+        margin: 10px 0;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        font-size: 1rem;
+        opacity: 0;
+        animation: fadeInUp 1.5s ease-out forwards;
+    }
+    
+    /* Animation de survol des éléments de la liste */
+    #list #li:hover {
+        background-color: #e0f2f1;  /* Fond bleu très léger */
+        transform: translateY(-5px);
+    }
+    
+    /* Animation d'apparition générale */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    /* Animation d'apparition pour les éléments de la liste */
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);  /* Déplacement vers le bas au début */
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);  /* Retour à la position normale */
+        }
+    }
+    
+    /* Effet sur les liens */
+    a {
+        color: #00695c;  /* Vert pour les liens */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        color: #004d40;  /* Changement vers un vert plus foncé au survol */
+    }
+    
+    /* Responsive Design pour les petites tailles d'écran */
+    @media (max-width: 768px) {
+        body {
+            padding: 20px;
+            margin: 10px;
+        }
+    
+        h1 {
+            font-size: 2rem;
+        }
+    
+        p {
+            font-size: 1rem;
+        }
+    
+    
+    }
